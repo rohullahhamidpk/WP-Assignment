@@ -483,3 +483,74 @@ nav a:hover {
     text-decoration: none;
     display: block;
 }
+
+/* Contact Form Section */
+.contact {
+    padding: 70px;
+    max-width: 1000px; 
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+     gap: 15px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-field {
+    flex: 1;
+    min-width: 200px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+    
+button[type="submit"] {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffdf00;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
